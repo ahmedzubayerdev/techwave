@@ -171,6 +171,7 @@ body{
     
 }
 .stats{
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 80px;
@@ -188,6 +189,76 @@ body{
     color: #00FF88;
     font-size: 3rem;
     font-weight: bold;
+}
+/* feature related style  */
+.feature-container{
+    background-color: #230E3D;
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.feature-title{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+     "card1 card2 card2"
+     "card1 card3 card3"
+     "card4 card4 card5";
+    gap: 2.8rem;
+
+}
+#card1{
+    grid-area: card1;
+    padding-top: 7rem;
+}
+#card2{
+    grid-area: card2;
+}
+#card3{
+    grid-area: card3;
+}
+#card4{
+    grid-area: card4;
+}
+#card5{
+    grid-area: card5;
+}
+
+.card{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    border-radius: 3.5rem;
+    background-color: rgba(53, 17, 101, 0.4);
+
+}
+
+.card-icon{
+    width: 4rem;
+    height:4rem;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.card-description{
+    color: #fff;
+    opacity: 0.6;
+    font-size: 1rem;
+    line-height: 24px;
 }
 
 
@@ -245,6 +316,26 @@ body{
     }
     .stats-descriptions{
         gap: 2px;
+    }
+    .feature-container{
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    .feature-title{
+        font-size: 1.5rem;
+    }
+    .card-container{
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 1rem;
+        
+        grid-template-areas:
+         "card1" 
+         "card2"
+         "card3"
+         "card4" 
+         "card5" 
+         "card6"; 
+
     }
     
     
