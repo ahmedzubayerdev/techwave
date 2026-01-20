@@ -260,6 +260,60 @@ body{
     font-size: 1rem;
     line-height: 24px;
 }
+/* episode and host related style  */
+.episode{
+    padding: 100px 100px;
+    background-color: #1A0B2E;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 100px;
+}
+.episode-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.8;
+}
+.video-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    margin: 40px auto;
+}
+
+.video{
+    width: 380px;
+    height: 214px;
+    
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+.video-detail{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #250D44;
+    text-align: left;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.video-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.video-description{
+    font-size: 1rem;
+    color: #fff;
+}
+.video-time{
+    color: #00FF88;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -336,6 +390,20 @@ body{
          "card5" 
          "card6"; 
 
+    }
+   
+    .episode{
+        padding: 10px 10px;
+
+    }
+    .video-container{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        margin: 0 auto;
+       
+    }
+    .video{
+        width: 100%;
     }
     
     
