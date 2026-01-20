@@ -113,8 +113,15 @@ body{
     font-weight: bolder;
     text-align: center;
     margin-top: 40px;
-
+    background: linear-gradient(  90deg,  #12c2e9, #4facfe, #c471ed, #f64f59);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
 }
+
+
 .banner-description{
     color: #fff;
     opacity: 0.5;
@@ -530,4 +537,10 @@ body{
         padding: 0 20px;
     }
     
+}
+/* animatiion  */
+@keyframes animate-gradient {
+    to{
+        background-position: 200%;
+    }
 }
