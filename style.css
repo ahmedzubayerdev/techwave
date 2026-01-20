@@ -314,6 +314,56 @@ body{
     display: flex;
     align-items: center;
 }
+/* host section relatd style  */
+
+.host-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.host-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+.host-card{
+    background-color: rgba(53, 17, 101, 0.4);
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 40px;
+    border-radius: 2rem;
+    color: #fff;
+}
+.host-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    margin-top: 1rem;
+}
+.host-name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.host-description{
+    opacity: 0.5;
+}
+.host-links{
+    display: flex;
+    gap: 8px;
+    margin-top: 1.5rem;
+    
+}
+.social{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -406,5 +456,16 @@ body{
         width: 100%;
     }
     
+    .host-card{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .host-details{
+        text-align: center;
+    }
+    .host-links{
+        justify-content: center;
+    }
     
 }
